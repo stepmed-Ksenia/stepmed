@@ -14,7 +14,7 @@ php -S 127.0.0.1:8080 -t public
 
 Откройте http://127.0.0.1:8080/login.php. Для production задайте `ADMIN_PASSWORD` в `.env`; demo-пароля нет.
 
-Схемы MySQL находятся в `migrations/001_schema.sql` и `migrations/002_school_core.sql`. Реальные платежи, Яндекс Календарь и Classario намеренно не подключены до утверждения открытых решений Q16–Q32.
+Схемы MySQL находятся в `migrations/001_schema.sql` и `migrations/002_school_core.sql`. T‑Bank для Telegram-бота оставлен безопасной заглушкой: `TBANK_ENABLED=0`. Приём оплаты выполняется переводом по СБП с ручным подтверждением Ксенией Степановой.
 
 ## Безопасный деплой
 
